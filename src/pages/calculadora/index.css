@@ -1,0 +1,201 @@
+.conteiner-01{
+
+    align-items: center;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* :root{
+    --colorone: #787ce6;
+    --colortwo: #2e0077;
+    --font: 'Righteous', cursive;
+} */
+
+.invisible{
+    display: none;
+}
+
+::selection{
+    color: var(--colorone);
+    background-color: var(--colortwo);
+}
+
+.inp::selection{
+    color: var(--colortwo);
+    background-color: var(--colorone);
+}
+
+#root, html, body{
+    height: 100%;
+    background-color: var(--colortwo);
+    margin: 0;
+    font-family: var(--font);
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    letter-spacing: 0.1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colorone);
+    padding: 0.5%;
+}
+
+.title{
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-weight: bolder;
+    color: var(--colortwo);
+    text-decoration: none;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    height: 60%;
+    justify-content: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    min-width: 100%;
+    padding: auto 0;
+}
+
+.inp{
+    margin: 1% auto;
+    padding: 2%;
+    width: 70%;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--colorone);
+    outline: 0;
+    color: var(--colorone);
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+.inp:focus{
+    transform: scale(1.05, 1.05);
+    transition: 200ms;
+}
+
+.inp:not(:focus){
+    transform: scale(1, 1);
+    transition: 200ms;
+}
+
+.calc{
+    font-family: var(--font);
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 1% auto;
+    padding: 2%;
+    width: 75%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--colorone);
+    outline: 0;
+    color: var(--colortwo);
+    background-color: var(--colorone);
+    font-size: 1rem;
+}
+
+.calc:hover{
+    transform: scale(1.05, 1.05);
+    transition: 200ms;
+}
+
+.calc:not(:hover){
+    transform: scale(1, 1);
+    transition: 200ms;
+}
+
+.calc:focus-within{
+    transform: scale(0.9, 0.9);
+    transition: 200ms;
+}
+
+.inp::-webkit-input-placeholder{
+    color: var(--colorone);
+    font-family: var(--font);
+    font-weight: bolder;
+    color: #BBBDF680;
+}
+
+.inp::-webkit-inner-spin-button{
+    display: none;
+}
+
+.results{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    background-color: var(--colorone);
+    justify-content: space-between;
+    min-width: 70%;
+    color: var(--colortwo);
+    font-weight: bolder;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--colorone);
+}
+
+.table1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: var(--colorone);
+}
+
+.table2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: var(--colorone);
+}
+
+.newcalc{
+    font-family: var(--font);
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 1% auto;
+    padding: 2%;
+    width: 70%;
+    text-align: center;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: var(--colorone);
+    outline: 0;
+    color: var(--colortwo);
+    background-color: var(--colorone);
+    font-size: 1rem;
+    top: 40%;
+}
+
+.newcalc:hover{
+    transform: scale(1.05, 1.05);
+    transition: 200ms;
+}
+
+.newcalc:not(:hover){
+    transform: scale(1, 1);
+    transition: 200ms;
+}
+
+.newcalc:focus-within{
+    transform: scale(0.9, 0.9);
+    transition: 200ms;
+}
