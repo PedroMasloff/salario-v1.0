@@ -10,19 +10,19 @@ function Tmp() {
     const handleInputChange = (event) => {
         const { name, value } = event.target
         setcalculadora({ ...calculadora, [name]: value })
-      }
-    
-      async function Cadastrar(calculadora) {
+    }
+
+    async function Cadastrar(calculadora) {
         // const response = await
         fetch(baseURL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-          },
-          body: JSON.stringify(calculadora)
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(calculadora)
         });
-      }
+    }
 
     return (
 
@@ -32,7 +32,7 @@ function Tmp() {
 
                 event.preventDefault();
                 Cadastrar(calculadora)
-                setcalculadora({ sal:'' ,dep:''})
+                setcalculadora({ sal: '', dep: '' })
                 alert("cadastro ok ")
 
             }}>
@@ -44,6 +44,15 @@ function Tmp() {
                     value={calculadora.sal}
                     onChange={handleInputChange}
                     placeholder="salario:"
+                />
+
+                <input
+                    className='form-dados-cadastro-1'
+                    name='dep'
+                    type='text'
+                    value={calculadora.dep}
+                    onChange={handleInputChange}
+                    placeholder="digite seu salario :"
                 />
 
                 <input
