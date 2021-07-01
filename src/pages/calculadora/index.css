@@ -6,11 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-/* :root{
-    --colorone: #787ce6;
-    --colortwo: #2e0077;
+:root{
+    --colorone: #d1271b;
+    --colortwo: #ffffff;
     --font: 'Righteous', cursive;
-} */
+}
 
 .invisible{
     display: none;
@@ -131,7 +131,7 @@
     color: var(--colorone);
     font-family: var(--font);
     font-weight: bolder;
-    color: #BBBDF680;
+    color: black;
 }
 
 .inp::-webkit-inner-spin-button{
@@ -199,3 +199,7 @@
     transform: scale(0.9, 0.9);
     transition: 200ms;
 }
+
+.Logo {
+    background-image: url(./mengao.jpg);
+  }

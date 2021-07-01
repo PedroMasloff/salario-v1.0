@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <Switch>
 
-        <Route exact path='/2' component={Calculadora} />
-        <Route exact path='/' component={Tmp} />
+        <Route exact path='/' component={Calculadora} />
+        <Route exact path='/2' component={Tmp} />
 
       </Switch>
     </BrowserRouter>
