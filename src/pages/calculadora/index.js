@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'
+import './index_arcom.css'
 
 import api from '../../services/api'
 
@@ -47,7 +47,10 @@ function Calculadora() {
 
         <div className="body">
             <div className="header">
-                <a className="title">CALCULADORA DE SALÁRIO DO MENGÃO</a>
+                {/* <img width="140"height="140" src="http://www.isababyoficial.com.br/wp-content/uploads/2018/11/59142-1.jpg"/> */}
+                <a className="title">CALCULADORA DE SALÁRIO </a>
+                {/* <img widht="140" height="120" src="https://uploads.consultaremedios.com.br/factories/logo/original/logo-arcon-cr.jpg?1490303723"/> */}
+
             </div>
             <div className="page">
                 <form className="inputs" onSubmit={handleCalcular}>
@@ -84,7 +87,9 @@ function Calculadora() {
                 </div>
                 <a className="newcalc" type="button" onClick={() => setData({})}>LIMPAR</a>
             </div>
-            
+            <div>
+                <img widht="140" height="100" src="http://www.arcom.com.br/wp-content/themes/wp-arcom/assets/images/marcas/isacare.png"/>
+            </div>
         </div>
     )
 }; export default Calculadora;
