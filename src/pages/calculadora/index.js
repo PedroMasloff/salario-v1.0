@@ -51,19 +51,20 @@ function Calculadora() {
         <div className="body">
             <div className="header">
                 <img marg src="images/arcom-logo.png" />
-                {/* <a className="title">CALCULADORA DE SALÁRIO </a> */}
-                <img className="imagenss" src="images/imagens/mapex-logo.png" />
-                {/* <Carousel autoPlay infiniteLoop showThumbs={false} showArrows={false} showStatus={false}> */}
+                
+                
+
+                <div className="otherLogos">
+                    <img className="imagenss" src="images/imagens/mapex-logo.png" />
 
                     <img  className="imagenss" src="images/imagens/isababy-logo.png" />
-                    
-                    {/* <img className="imagenss" src="images/isacare.png" /> */}
                 
                     <img  className="imagenss" src="images/imagens/dentil-logo.png" />
                     
                     <img  className="imagenss"src="images/imagens/starlux-logo.png" />
                 
                     <img className="imagenss" src="images/isacare-logo.png" />
+                </div>
                     
                 
             {/* </Carousel> */}
