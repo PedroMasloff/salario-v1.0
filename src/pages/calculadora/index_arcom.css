@@ -84,7 +84,7 @@
     border-radius: 1rem;
     border-color: var(--colortree);
     outline: 0;
-    color: var(--colorone);
+    color: var(--colortwo);
     font-weight: bolder;
     background-color: var(--colortree);
 }
