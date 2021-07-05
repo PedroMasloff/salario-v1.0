@@ -3,7 +3,6 @@ import './index.css'
 
 import api from '../../services/api'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
 
 
@@ -50,24 +49,19 @@ function Calculadora() {
 
         <div className="body">
             <div className="header">
-                <img marg src="images/arcom-logo.png" />
-                
-                
+                <img marg src="images/arcom-logo.png" alt="Logotipo Arcom"/>
 
                 <div className="otherLogos">
-                    <img className="imagenss" src="images/imagens/mapex-logo.png" />
+                    <img src="images/imagens/mapex-logo.png" alt="Logotipo mapex"/>
 
-                    <img  className="imagenss" src="images/imagens/isababy-logo.png" />
+                    <img src="images/imagens/isababy-logo.png" alt="Logotipo "/>
                 
-                    <img  className="imagenss" src="images/imagens/dentil-logo.png" />
+                    <img src="images/imagens/dentil-logo.png" alt="Logotipo "/>
                     
-                    <img  className="imagenss"src="images/imagens/starlux-logo.png" />
+                    <img src="images/imagens/starlux-logo.png" alt="Logotipo "/>
                 
-                    <img className="imagenss" src="images/isacare-logo.png" />
+                    <img src="images/isacare-logo.png" alt="Logotipo "/>
                 </div>
-                    
-                
-            {/* </Carousel> */}
 
             </div>
             <div className="page">
@@ -98,7 +92,7 @@ function Calculadora() {
                             <label>DESCONTOS:</label>
                             <input disabled className="inp" value={data.desconto ?"R$ " + data.desconto : '-'}/>
                             <strong><label>TOTAL:</label></strong>
-                            <input disabled className="inp" value={data.descontoTotal && data.descontoPorcem ?"R$ " + `${data.descontoTotal} (${data.descontoPorcem}%)` : '-'}/>
+                            <input disabled className="inp" value={data.descontoTotal && data.descontoPorcem ? `R$ ${data.descontoTotal} (${data.descontoPorcem}%)` : '-'}/>
                         <strong><label>RESULTADOS:</label></strong> 
                             <input disabled className="inp" value={data.salarioLiq ?"R$ " + data.salarioLiq : '-'}/>
                             <button className="calc" onClick={() => setData({})}>LIMPAR</button>
