@@ -2,6 +2,9 @@ import React from 'react';
 import './index.css'
 
 import api from '../../services/api'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 
 function Calculadora() {
@@ -47,9 +50,23 @@ function Calculadora() {
 
         <div className="body">
             <div className="header">
-                <img src="images/arcom-logo.png" />
+                <img marg src="images/arcom-logo.png" />
                 {/* <a className="title">CALCULADORA DE SALÁRIO </a> */}
-                <img src="images/isacare-logo.png" />
+                <img className="imagenss" src="images/imagens/mapex-logo.png" />
+                {/* <Carousel autoPlay infiniteLoop showThumbs={false} showArrows={false} showStatus={false}> */}
+
+                    <img  className="imagenss" src="images/imagens/isababy-logo.png" />
+                    
+                    {/* <img className="imagenss" src="images/isacare.png" /> */}
+                
+                    <img  className="imagenss" src="images/imagens/dentil-logo.png" />
+                    
+                    <img  className="imagenss"src="images/imagens/starlux-logo.png" />
+                
+                    <img className="imagenss" src="images/isacare-logo.png" />
+                    
+                
+            {/* </Carousel> */}
 
             </div>
             <div className="page">
