@@ -50,23 +50,19 @@ function Calculadora() {
 
         <div className="body">
             <div className="header">
-                <img marg src="images/arcom-logo.png" />
-                {/* <a className="title">CALCULADORA DE SALÁRIO </a> */}
-                <img className="imagenss" src="images/imagens/mapex-logo.png" />
-                {/* <Carousel autoPlay infiniteLoop showThumbs={false} showArrows={false} showStatus={false}> */}
+                <img marg src="images/arcom-logo.png" alt="Logotipo Arcom"/>
 
-                    <img  className="imagenss" src="images/imagens/isababy-logo.png" />
+                <div className="otherLogos">
+                    <img src="images/imagens/mapex-logo.png" alt="Logotipo Mapex"/>
+
+                    <img src="images/imagens/isababy-logo.png" alt="Logotipo Isababy"/>
                     
-                    {/* <img className="imagenss" src="images/isacare.png" /> */}
-                
-                    <img  className="imagenss" src="images/imagens/dentil-logo.png" />
+                    <img src="images/imagens/dentil-logo.png" alt="Logotipo Dentil"/>
+                        
+                    <img src="images/imagens/starlux-logo.png" alt="Logotipo Starlux"/>
                     
-                    <img  className="imagenss"src="images/imagens/starlux-logo.png" />
-                
-                    <img className="imagenss" src="images/isacare-logo.png" />
-                    
-                
-            {/* </Carousel> */}
+                    <img src="images/isacare-logo.png" alt="Logotipo Isacare"/>
+                </div>
 
             </div>
             <div className="page">

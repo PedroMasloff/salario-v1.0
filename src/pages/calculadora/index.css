@@ -68,13 +68,11 @@ overflow: auto;
 
 }
 
-.imagenss{
-
-    
+.otherLogos img{
     height: auto;
-    max-height:90px ;
+    max-height:80px ;
     width: auto;
-    
+    padding: 0 5px;       
 }
 .header-title h2{
     font-size: 1.5rem;
